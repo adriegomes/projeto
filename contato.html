@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
+
+    <style>
+        header nav{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+        
+        footer{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+    </header>
+
+<main>
+        <section class="contato">
+            <h1>Dúvidas? Entre em contato conosco!</h1>
+              <p>O mundo animal é fascinante, não é mesmo? Por isso, te encorajamos a falar com a nossa equipe! Estaremos felizes em recebê-lo.</p>
+              <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Insira seu ">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="donatello@gmail.com">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que gostaria de falar?">
+                <label for="opcoes">Opções</label>
+                <select name="opcoes" required id="categoria">
+                <option value="" disabled selected>Selecione uma das opções</option>
+                <option value="duvida">Dúvida</option>
+                <option value="adocao">Adoção</option>
+                <option value="trabalhe">Trabalhe Conosco</option>
+                <option value="outro">Outro</option>
+            </select>
+            <label for="comentario">Comentário</label>
+               <textarea name="comentario" id="comentario" rows="1" required placeholder="Conte-nos o que deseja compartilhar"></textarea>
+               <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Adrielli Gomes. Todos os direitos reservados.</p>
+      <nav>
+         <a href="index.html">Início</a>
+         <a href="sobre.html">Sobre</a>
+         <a href="contato.html">Contato</a>
+      </nav>
+   </footer>
+</body>
 </body>
 </html>
